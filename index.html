@@ -4,34 +4,81 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Resume</title>
-        <style></style>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital@1&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">        
+        <style>
+            body{
+                font-family: 'Source Sans Pro', sans-serif; 
+                font-weight: 300;
+            }
+            .text1{
+                font-family: 'Source Sans Pro', sans-serif;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                /* border: 1px solid red; */
+            }
+            h1,h2{
+                font-family: 'Inria Serif', serif;
+                /* border: 1px solid red; */
+            }   
+            h2{
+                margin-left: 10px;
+            }  
+            .adress{
+                font-weight: 400;
+                font-size: 1.1em;
+            }    
+            li{
+                font-size: 1.1em;
+                text-decoration: brown;
+            }  
+            a:hover{
+                color: black;
+            } 
+            a:visited{
+                color: gray;
+            } 
+
+            .photo{
+                width: 100px;
+                margin: 20px;
+            }
+
+
+        </style>
     </head>
     <body>
         <center>
+            <img src="./images/chihirophoto.jpg" class="photo" alt="">
             <!-- This is H1 element -->
             <h1>CHIHIRO KATO</h1>
             <!-- br means line break -->
-            <br>chihiro@tao-g.com
-            <br>2206 East 33rd Avenue, vancouver, bc V5N 3G1 CA
-            <br>+12366688212
+            <p class="adress">
+                chihiro@tao-g.com
+                <br>2206 East 33rd Avenue, vancouver, bc V5N 3G1 CA
+                <br>+12366688212
+            </p>
+               
         </center>
         <!-- This is H2 element -->
         <h2>Summary</h2>
         <!-- BLOCKQUOTE is for paragraphs indentation -->
         <blockquote>
-            <br> Collabourative and driven Graphic Designer over 10 years of experience 
+            <p class="text1">
+            Collabourative and driven Graphic Designer over 10 years of experience 
             <br> delivering digital and print materials for a variety of client campaigns.
             <br>Adept at visual strategy, Illustration, and  for print media. 
+            </p>
         </blockquote>
         <h2>Education</h2>
         <blockquote>
             <!-- This one is called unordered list -->
             <ul>  
-                <b></b><br>2020-2022</b>
+                <b>2020-2022</b>
                 <a href="https://ciccc.ca/">
                     <li>Cornerstone International Community College of Canada. </li>
                 </a>
-                <b><br>2007-2010</b>
+                <br>
+                <b>2007-2010</b>
                 <a href="https://www.kds.ac.jp/">
                     <li>Kuwasawa Design School.</li>
                 </a>
@@ -40,7 +87,7 @@
         </blockquote>
         <h2>Experience</h2>
         <blockquote>
-            <b><br>2015-2020</b><a href="http://tao-g.com"> Taographics,inc.</a> Tochigi, Japan 
+            <b>2015-2020</b><a href="http://tao-g.com"> Taographics,inc.</a> Tochigi, Japan 
             <ul>
                 <li>Graphic Designer</li>
                 <li>Illustrator</li>
@@ -52,11 +99,11 @@
                 <b><p>2010-2015</p></b>
             <ul>
                 <li>Freelance Graphic Designer</li>
-                <p>
-                    <br> Advise clients on the best strategies to use for their particular products and desired audiences.
-                    <br>Create unique images, audio messages, illustrations, and logos for customers.
+                <p class="text1">
+                    Advise clients on the best strategies to use for their particular products and desired audiences.
+                    Create unique images, audio messages, illustrations, and logos for customers.
                     Projects included logos, flyers, posters, and page layouts. 
-                    <br>Communicated with clients to create design and Illustration.
+                    Communicated with clients to create design and Illustration.
                 </p>
                
             </ul>
@@ -74,7 +121,7 @@
         </blockquote>
         <p>reference will be provided upon request.</p>
             <center>
-                <p>copyright &copy; 2020 Chihiro Kato</p>
+                <small>copyright &copy; 2020 Chihiro Kato</small>
             </center>
     </body>
 </html>
